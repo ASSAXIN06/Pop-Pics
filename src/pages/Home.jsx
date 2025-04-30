@@ -8,7 +8,18 @@ function Home() {
         {id: 4, title: "John Wick", release_date: "2023"}
     ]
 
+const handleSearch = () => {}
+
     return <div className="home">
+
+        <form className="search-form" onSubmit={handleSearch}>
+            <input
+                type= "text"
+                placeholder= "Search for movies..."
+                className="search-input"></input>
+            <button className="search-button" type="submit">Search</button>
+        </form>
+
         <div className="movies-grid">
             {movies.map((movie) => (
                 <MovieCard movie={movie} key={movie.id} />
