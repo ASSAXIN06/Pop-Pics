@@ -1,11 +1,12 @@
 import { useState,useEffect } from 'react'
 import './App.css'
+import MovieCard from './components/MovieCard'
 
 function App() {
 
   return (
     <>
-    <h1>Movies are here</h1>
+      <MovieCard movie={{title: "Aniket's Film", release_date: "2025"}}/>
     </>
   )
 }
